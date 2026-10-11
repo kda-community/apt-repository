@@ -1,0 +1,238 @@
+
+name: Build packages and Deb repository
+
+on:
+  workflow_dispatch:
+
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  build_deb:
+    strategy:
+      fail-fast: false
+      matrix:
+        os-version:
+          - bookworm
+          - trixie
+          - jammy
+          - noble
+          - resolute
+
+        package:
+          - name: chainweb-mining-client
+            version: "0.8"
+            tag: "0.8"
+            ghc: "9.14.1"
+            cabal: "3.16"
+            build-dir: chainweb-mining-client-1
+            pkg-release: "1"
+
+          - name: kda-tool
+            version: "1.2"
+            tag: "1.2"
+            ghc: "9.10.3"
+            cabal: "3.12"
+            build-dir: kda-tool-1
+            pkg-release: "1"
+
+          - name: kda-tool
+            version: "1.3"
+            tag: "1.3"
+            ghc: "9.10.3"
+            cabal: "3.12"
+            build-dir: kda-tool-1
+            pkg-release: "1"
+
+          - name: pact
+            version: "5.4.1"
+            tag: "5.4.1"
+            ghc: "9.10.3"
+            cabal: "3.12"
+            build-dir: pact-1
+            pkg-release: "1"
+
+          - name: chainweb-node
+            version: "3.2.1"
+            tag: "3.2.1"
+            ghc: "9.10.2"
+            cabal: "3.14"
+            build-dir: chainweb-node-1
+            pkg-release: "1"
+
+          - name: chainweb-snapshots
+            version: "1.0"
+            tag: ""
+            ghc: ""
+            cabal: ""
+            build-dir: chainweb-snapshots-1
+            pkg-release: "1"
+
+        include:
+          - os-version: bookworm
+            runner: ubuntu-22.04
+          - os-version: trixie
+            runner: ubuntu-24.04
+          - os-version: jammy
+            runner: ubuntu-22.04
+          - os-version: noble
+            runner: ubuntu-24.04
+          - os-version: resolute
+            runner: ubuntu-26.04
+
+    runs-on: ${{ matrix.runner }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Prepare directories
+        run: |
+          cp -rf packages/${{ matrix.package.build-dir }} current
+          mkdir -p dist
+
+      - name: Prepare cache Ref
+        env:
+          MATRIX_JSON: ${{ toJSON(matrix) }}
+        run: printf '%s\n' "$MATRIX_JSON" > .cache_ref
+
+      - name: Cache Deb files
+        id: cache-deb
+        uses: actions/cache@v6
+        with:
+          path: dist
+          key: build-${{ hashFiles(format('packages/{0}/**', matrix.package.build-dir), '.cache_ref') }}
+
+      - name: Build package
+        if: steps.cache-deb.outputs.cache-hit != 'true'
+        uses: ./current
+        with:
+          tag: ${{ matrix.package.tag }}
+          version: ${{ matrix.package.version }}
+          ghc: ${{ matrix.package.ghc }}
+          cabal: ${{ matrix.package.cabal }}
+          os-version: ${{ matrix.os-version }}
+          pkg-release: ${{ matrix.package.pkg-release }}
+
+      - name: List packages
+        run : ls -alh dist
+
+      - name: Upload Deb packages
+        uses: actions/upload-artifact@v7
+        with:
+          name: deb-${{ matrix.package.name }}-deb-${{ matrix.package.version }}-${{ matrix.os-version }}
+          path: dist/*.deb
+
+
+  add_repo:
+    runs-on: ubuntu-latest
+    needs: build_deb
+    if: always()
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        os-version:
+          - bookworm
+          - trixie
+          - jammy
+          - noble
+          - resolute
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: "deb-*-${{ matrix.os-version }}"
+          merge-multiple: true
+
+      - name: List files
+        run: ls -alh
+
+      - name: Add ${{ matrix.os-version }} release
+        uses: smeinecke/apt-repo-action@v2.2.1
+        with:
+          github_token: ${{ github.token }}
+          repo_supported_arch: amd64
+
+          repo_supported_version: |
+            bookworm
+            trixie
+            jammy
+            noble
+            resolute
+          file: "*.deb"
+          file_target_version: ${{ matrix.os-version }}
+          private_key: ${{ secrets.APT_SIGNING_KEY }}
+          public_key: ${{ secrets.APT_SIGNING_PUBKEY }}
+          key_passphrase: ${{ secrets.APT_SIGNING_KEY_PASSPHRASE }}
+          skip_duplicates: true
+
+  finalize:
+    name: Finalize
+    runs-on: ubuntu-latest
+    needs: add_repo
+    if: always()
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+
+      - name: Checkout main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          path: source
+
+      - name: Generate index.html and CNAME
+        env:
+          DOMAIN: ${{ vars.DOMAIN }}
+        run: |
+          m4 -D DOMAIN="$DOMAIN" source/index.template.html > index.html
+
+          printf '%s\n' "$DOMAIN" > CNAME
+
+      - name: Commit generated files
+        run: |
+          git add index.html CNAME
+
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email \
+              "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update GitHub Pages"
+            git push origin gh-pages
+          fi
+
+      - name: Clean
+        run: rm -rf source
+
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: .
+
+  # Deployment job
+  publish:
+    name: Publish
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: finalize
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

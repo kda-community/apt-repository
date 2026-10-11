@@ -1,0 +1,40 @@
+name: kda-tool
+arch: amd64
+platform: linux
+version: ${VERSION}
+release: ${RELEASE}
+section: misc
+priority: optional
+maintainer: kda_community@pm.me
+description: Tool to build and use Kadena transactions
+vendor: Kadena Community Edition
+homepage: https://github.com/kda-community/kda-tool
+license: BSD-3-Clause
+
+contents:
+  - src: ./kda
+    dst: /usr/bin/kda
+    file_info:
+      mode: 0755
+
+  - src: ./config/config.json
+    dst: /etc/kda/config.json
+    type: config|noreplace
+    file_info:
+      mode: 0644
+
+  - src: ./README.md
+    dst: /usr/share/doc/kda/README.md
+    file_info:
+      mode: 0644
+
+deb:
+  arch: amd64
+  compression: zstd
+
+depends:
+  - libssl3t64 | libssl3   # OpenSSL (t64 sur Debian 13 / Ubuntu 24.04+)
+  - zlib1g                 # zlib
+  - libgmp10               # GMP
+  - libmpfr6               # MPFR
+  - jq
