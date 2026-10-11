@@ -6,7 +6,7 @@ release: ${RELEASE}
 section: misc
 priority: optional
 maintainer: kda_community@pm.me
-description: Mining Client for Chainweb node
+description: Mining Client for Kadena Chainweb node
 vendor: Kadena Community Edition
 homepage: https://github.com/kda-community/chainweb-mining-client
 
