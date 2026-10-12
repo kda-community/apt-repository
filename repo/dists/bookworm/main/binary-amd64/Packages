@@ -1,0 +1,96 @@
+Package: chainweb-compact
+Version: 3.2.1-1-bookworm
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 84882
+Depends: libssl3t64 | libssl3, zlib1g, libgmp10, libmpfr6, chainweb-node
+Homepage: https://github.com/kda-community/chainweb-node
+Priority: optional
+Section: utils
+Filename: pool/main/c/chainweb-compact/chainweb-compact_3.2.1-1-bookworm_amd64.deb
+Size: 17930404
+SHA256: 4bb8b35b6384199653e2e499b185657de72526e1c35706b03a43629f13c9dac2
+SHA1: db536c39c7ef0534a72026d9b0cfdb8a1a1b26a4
+MD5sum: 5a5e27047b26edac8cc0eb365ec41f13
+Description: Compaction utility for Kadena Chainweb databases
+
+Package: chainweb-mining-client
+Version: 0.8.0-1-bookworm
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 33675
+Depends: zlib1g, libgmp10
+Homepage: https://github.com/kda-community/chainweb-mining-client
+Priority: optional
+Section: misc
+Filename: pool/main/c/chainweb-mining-client/chainweb-mining-client_0.8.0-1-bookworm_amd64.deb
+Size: 7086476
+SHA256: 91da05185cc760308033ec44342a56f8876893a25d2818b23a50f2fbded05079
+SHA1: 44042127a0595e3e2b62ac92dbbd289f6d22d7e3
+MD5sum: dd11b91f49a8dab4bd3b9fb499f0e0f9
+Description: Mining Client for Kadena Chainweb node
+
+Package: chainweb-node
+Version: 3.2.1-1-bookworm
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 114091
+Depends: libssl3t64 | libssl3, zlib1g, libgmp10, libmpfr6, ca-certificates, libsnappy1v5, liblz4-1, libbz2-1.0, libgflags2.2, zstd, locales, curl, jq
+Homepage: https://github.com/kda-community/chainweb-node
+Priority: optional
+Section: misc
+Filename: pool/main/c/chainweb-node/chainweb-node_3.2.1-1-bookworm_amd64.deb
+Size: 23425078
+SHA256: de3b1b97a3123701491787bdeb4c81638dac712f672f11eb54e3d24fdf856af9
+SHA1: 3ef17c3721e9ee132abdbfa89b3e86933cfc1539
+MD5sum: 9c87432f87966f68a2e7c7d232339f1c
+Description: Chainweb node for Kadena network
+
+Package: chainweb-snapshots
+Version: 1.0.0-1-bookworm
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 7
+Depends: yq, whiptail, rsync, jq, chainweb-node
+Homepage: https://github.com/kda-community
+Priority: optional
+Section: utils
+Filename: pool/main/c/chainweb-snapshots/chainweb-snapshots_1.0.0-1-bookworm_amd64.deb
+Size: 3450
+SHA256: e8cb5fcf777386e52295edc1ddd236c57779de2ee6a7296edf6358b1246d3804
+SHA1: d8e30b5700c5d1ccb0522e9e1bed4aa8f999a5b9
+MD5sum: ab95fa8054d82cfd21ba7342481e7d6d
+Description: Utility to download Kadena blockchain snapshots
+
+Package: kda-tool
+Version: 1.3.0-1-bookworm
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 49969
+Depends: libssl3t64 | libssl3, zlib1g, libgmp10, libmpfr6, jq
+Homepage: https://github.com/kda-community/kda-tool
+Priority: optional
+Section: misc
+Filename: pool/main/k/kda-tool/kda-tool_1.3.0-1-bookworm_amd64.deb
+Size: 9712002
+SHA256: fcf42fff4271af96d42760073e461b061f01e81e35b1dfe0083e90aaed266c06
+SHA1: 6eee4aa1ab17bb400eb23ffc072a5961859147a3
+MD5sum: 99bac301378bc26cd40c1169285a662f
+Description: Tool to build and use Kadena transactions
+
+Package: pact
+Version: 5.4.1-1-bookworm
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 134315
+Depends: libssl3t64 | libssl3, zlib1g, libgmp10, libmpfr6
+Homepage: https://github.com/kda-community/pact-5
+Priority: optional
+Section: devel
+Filename: pool/main/p/pact/pact_5.4.1-1-bookworm_amd64.deb
+Size: 23700014
+SHA256: 8c427355b1a321dc8b25399443e5916fa1eb6455cf454f422ff86e5578c72ac8
+SHA1: 89bed84e9ba769ab80f3a2afb0be10f96f932edd
+MD5sum: 96e62bbd3423d8426b947cb96e0cacd9
+Description: Programming language of Kadena
+

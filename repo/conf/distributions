@@ -1,0 +1,30 @@
+Description: kda-community/apt-repository
+Codename: bookworm
+Architectures: amd64
+Components: main
+SignWith: 7327A8D04DED12E4E126E475F63FC51DC37B25E5
+
+Description: kda-community/apt-repository
+Codename: trixie
+Architectures: amd64
+Components: main
+SignWith: 7327A8D04DED12E4E126E475F63FC51DC37B25E5
+
+Description: kda-community/apt-repository
+Codename: jammy
+Architectures: amd64
+Components: main
+SignWith: 7327A8D04DED12E4E126E475F63FC51DC37B25E5
+
+Description: kda-community/apt-repository
+Codename: noble
+Architectures: amd64
+Components: main
+SignWith: 7327A8D04DED12E4E126E475F63FC51DC37B25E5
+
+Description: kda-community/apt-repository
+Codename: resolute
+Architectures: amd64
+Components: main
+SignWith: 7327A8D04DED12E4E126E475F63FC51DC37B25E5
+
