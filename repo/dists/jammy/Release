@@ -1,17 +1,17 @@
 Codename: jammy
-Date: Mon, 12 Oct 2026 08:02:37 UTC
+Date: Mon, 12 Oct 2026 08:03:33 UTC
 Architectures: amd64
 Components: main
 Description: kda-community/apt-repository
 MD5Sum:
- d41d8cd98f00b204e9800998ecf8427e 0 main/binary-amd64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 main/binary-amd64/Packages.gz
+ 0284e7b7215c3e51424bc306970524dc 3490 main/binary-amd64/Packages
+ ec81d82a7da99fae2b3f9d5a766793d9 1270 main/binary-amd64/Packages.gz
  ec429ea473ca114ad5c5540536b9ea3f 78 main/binary-amd64/Release
 SHA1:
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-amd64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-amd64/Packages.gz
+ 1df302f3fa1e6033f6657c3f987cfb4425af8e07 3490 main/binary-amd64/Packages
+ fd0e27f6cb1f0576eb9690a2e8e5e28fe2ff6737 1270 main/binary-amd64/Packages.gz
  19f9a91944205e6517e03ec4e320e65433776806 78 main/binary-amd64/Release
 SHA256:
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-amd64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-amd64/Packages.gz
+ 2193c1dbd06e3d5121b16ed04c7e7ba87767517e4e45595fbf19f096b78a67d3 3490 main/binary-amd64/Packages
+ a77f2e57d35165aac6fe4a038c63236a5150fec52f3d142cb87b6e405745c1c3 1270 main/binary-amd64/Packages.gz
  bfdf5c15341c83a26e9cb850d8a9e4f07dc8e6c6fe94ba43e40b94a28139f85f 78 main/binary-amd64/Release
