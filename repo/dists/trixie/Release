@@ -1,17 +1,17 @@
 Codename: trixie
-Date: Mon, 12 Oct 2026 08:01:45 UTC
+Date: Mon, 12 Oct 2026 08:02:36 UTC
 Architectures: amd64
 Components: main
 Description: kda-community/apt-repository
 MD5Sum:
- d41d8cd98f00b204e9800998ecf8427e 0 main/binary-amd64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 main/binary-amd64/Packages.gz
+ c8faab97a6116bcf45299e7ecdf50000 3502 main/binary-amd64/Packages
+ 44d478742476d4831e4b559923a668b0 1272 main/binary-amd64/Packages.gz
  ec429ea473ca114ad5c5540536b9ea3f 78 main/binary-amd64/Release
 SHA1:
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-amd64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-amd64/Packages.gz
+ 3093f201856befa47e1ce53e10ff86122b39d0b3 3502 main/binary-amd64/Packages
+ 86d59eceb9facf15f1990a61389ac3d1d3996980 1272 main/binary-amd64/Packages.gz
  19f9a91944205e6517e03ec4e320e65433776806 78 main/binary-amd64/Release
 SHA256:
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-amd64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-amd64/Packages.gz
+ 6d4faa6de6309b3ed54ae2fbbb54a1f36d6c9e9bd8ff820bec7de33ee397f5be 3502 main/binary-amd64/Packages
+ 2891a5735765b989a21e3177361eb77eeb86ab75d49e9121ce2afffec875724c 1272 main/binary-amd64/Packages.gz
  bfdf5c15341c83a26e9cb850d8a9e4f07dc8e6c6fe94ba43e40b94a28139f85f 78 main/binary-amd64/Release
