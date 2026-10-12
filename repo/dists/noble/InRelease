@@ -2,7 +2,7 @@
 Hash: SHA512
 
 Codename: noble
-Date: Mon, 12 Oct 2026 08:04:24 UTC
+Date: Mon, 12 Oct 2026 08:05:17 UTC
 Architectures: amd64
 Components: main
 Description: kda-community/apt-repository
@@ -20,8 +20,8 @@ SHA256:
  bfdf5c15341c83a26e9cb850d8a9e4f07dc8e6c6fe94ba43e40b94a28139f85f 78 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQRzJ6jQTe0S5OEm5HX2P8Udw3sl5QUCasyUiAAKCRD2P8Udw3sl
-5fJpAQCYAChMM9/MyYSn4VyVCzoRVgduPuVgPJPWOUuS4WJU0wEAoUYuBzuvrTcd
-tyXj/WaLf8ESxRqe4ze8hMhiXbBs4As=
-=luVv
+iHUEARYKAB0WIQRzJ6jQTe0S5OEm5HX2P8Udw3sl5QUCasyUvQAKCRD2P8Udw3sl
+5eVlAP94fles/ACY+UKG6CFH4WZHogkEk+kN2wsbT7oIRrVLbwEAjtnv5OnkB8t+
+Np8I3ZOKRCkNTSIm/YYXYaHIZ36Ykgw=
+=Atl8
 -----END PGP SIGNATURE-----

@@ -2,7 +2,7 @@
 Hash: SHA512
 
 Codename: jammy
-Date: Mon, 12 Oct 2026 08:04:23 UTC
+Date: Mon, 12 Oct 2026 08:05:16 UTC
 Architectures: amd64
 Components: main
 Description: kda-community/apt-repository
@@ -20,8 +20,8 @@ SHA256:
  bfdf5c15341c83a26e9cb850d8a9e4f07dc8e6c6fe94ba43e40b94a28139f85f 78 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQRzJ6jQTe0S5OEm5HX2P8Udw3sl5QUCasyUiAAKCRD2P8Udw3sl
-5ZJFAP9/q6//5pmnzMvfXYVqCpCt8JAuNHgGmgd1umv69zYniAEAg3+NyTXsDDcZ
-xXEA/KssCR208i22G6GiMUVoyINWTwI=
-=E4Vp
+iHUEARYKAB0WIQRzJ6jQTe0S5OEm5HX2P8Udw3sl5QUCasyUvQAKCRD2P8Udw3sl
+5UhMAP9xJ5FF2IIGSW2do+PoN1f3gWulu+zYzcpCdeVwUU61MQEAn1OV1y6LqR7q
+9oxpj9qrKS5HXu3mojeUvW19zKnykg8=
+=1tCH
 -----END PGP SIGNATURE-----

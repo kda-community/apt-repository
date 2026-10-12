@@ -1,0 +1,96 @@
+Package: chainweb-compact
+Version: 3.2.1-1-resolute
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 85631
+Depends: libssl3t64 | libssl3, zlib1g, libgmp10, libmpfr6, chainweb-node
+Homepage: https://github.com/kda-community/chainweb-node
+Priority: optional
+Section: utils
+Filename: pool/main/c/chainweb-compact/chainweb-compact_3.2.1-1-resolute_amd64.deb
+Size: 18324864
+SHA256: 7240934d381a4bbee6e7ef677385cc79af773ded824b26d8771b165901c6754a
+SHA1: 73aac1d618e22728a1326cf52d01ffd229f8933a
+MD5sum: 084d7b7c4d299509d766d5d9405183aa
+Description: Compaction utility for Kadena Chainweb databases
+
+Package: chainweb-mining-client
+Version: 0.8.0-1-resolute
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 33671
+Depends: zlib1g, libgmp10
+Homepage: https://github.com/kda-community/chainweb-mining-client
+Priority: optional
+Section: misc
+Filename: pool/main/c/chainweb-mining-client/chainweb-mining-client_0.8.0-1-resolute_amd64.deb
+Size: 6954892
+SHA256: 0bafc5ca299668e1cc988bb29f101e84d0b869f559dbf404446c75f8e99c8a1b
+SHA1: ccaa56c287173e4ee825efcb4c0e259e777c0a1e
+MD5sum: 5a8f67706633fb0822971bcd5716ca00
+Description: Mining Client for Kadena Chainweb node
+
+Package: chainweb-node
+Version: 3.2.1-1-resolute
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 114836
+Depends: libssl3t64 | libssl3, zlib1g, libgmp10, libmpfr6, ca-certificates, libsnappy1v5, liblz4-1, libbz2-1.0, libgflags2.2, zstd, locales, curl, jq
+Homepage: https://github.com/kda-community/chainweb-node
+Priority: optional
+Section: misc
+Filename: pool/main/c/chainweb-node/chainweb-node_3.2.1-1-resolute_amd64.deb
+Size: 23826960
+SHA256: 6938980453d20265cb3f78c91d9e89351706986a424dc5ee6ee03b027da7f93d
+SHA1: ab5ebf40793e3b53122d022acead3179765fe29c
+MD5sum: babba0cff663c220474b83a52a5abb09
+Description: Chainweb node for Kadena network
+
+Package: chainweb-snapshots
+Version: 1.0.0-1-resolute
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 7
+Depends: yq, whiptail, rsync, jq, chainweb-node
+Homepage: https://github.com/kda-community
+Priority: optional
+Section: utils
+Filename: pool/main/c/chainweb-snapshots/chainweb-snapshots_1.0.0-1-resolute_amd64.deb
+Size: 3448
+SHA256: 97de6322d8f470c8e39e72176d775e272fc3b448204e7150214708f9992b08ec
+SHA1: 41740ab7c8a5560082beeb184e8bf411c021f10f
+MD5sum: b59b1d3cb17767c55186d5e7959a18d9
+Description: Utility to download Kadena blockchain snapshots
+
+Package: kda-tool
+Version: 1.3.0-1-resolute
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 49964
+Depends: libssl3t64 | libssl3, zlib1g, libgmp10, libmpfr6, jq
+Homepage: https://github.com/kda-community/kda-tool
+Priority: optional
+Section: misc
+Filename: pool/main/k/kda-tool/kda-tool_1.3.0-1-resolute_amd64.deb
+Size: 9687110
+SHA256: c1f2d4c3828c437ce6674b0e29caa29e120a6ed76bcf2f5768357ada1f24044d
+SHA1: 10978ec334c6ec2e90762822045e695858a3482b
+MD5sum: b8af9fdc1cf6e5fe7cdea0ab2eae3dd8
+Description: Tool to build and use Kadena transactions
+
+Package: pact
+Version: 5.4.1-1-resolute
+Architecture: amd64
+Maintainer: kda_community@pm.me
+Installed-Size: 134350
+Depends: libssl3t64 | libssl3, zlib1g, libgmp10, libmpfr6
+Homepage: https://github.com/kda-community/pact-5
+Priority: optional
+Section: devel
+Filename: pool/main/p/pact/pact_5.4.1-1-resolute_amd64.deb
+Size: 23696432
+SHA256: 56f61eecb42961ece8b98540d91630a883baf797cac37baec89e9f5b55919afb
+SHA1: 26c2bccd050e947f18c870bcb048e18d66a4882d
+MD5sum: 9247881fea4fd3e8c4a1050c6b608f0d
+Description: Programming language of Kadena
+
