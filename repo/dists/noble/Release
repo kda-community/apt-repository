@@ -1,17 +1,17 @@
 Codename: noble
-Date: Mon, 12 Oct 2026 08:03:33 UTC
+Date: Mon, 12 Oct 2026 08:04:24 UTC
 Architectures: amd64
 Components: main
 Description: kda-community/apt-repository
 MD5Sum:
- d41d8cd98f00b204e9800998ecf8427e 0 main/binary-amd64/Packages
- 7029066c27ac6f5ef18d660d5741979a 20 main/binary-amd64/Packages.gz
+ 670caf0228c1af5d3197a44fec228d08 3490 main/binary-amd64/Packages
+ a5fb30dd2994b4ffe8f865db85caa1c4 1267 main/binary-amd64/Packages.gz
  ec429ea473ca114ad5c5540536b9ea3f 78 main/binary-amd64/Release
 SHA1:
- da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-amd64/Packages
- 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-amd64/Packages.gz
+ d9246e6a9feeb6eff09d9d1dac06b4d902104041 3490 main/binary-amd64/Packages
+ 6ae91e08796c8e29848c091f3ac2f5b8005c506c 1267 main/binary-amd64/Packages.gz
  19f9a91944205e6517e03ec4e320e65433776806 78 main/binary-amd64/Release
 SHA256:
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-amd64/Packages
- 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-amd64/Packages.gz
+ 21e37cd7251d52ffa3ae417ef0ea70a3c22c10c270e87b142fff9b861f50dc9f 3490 main/binary-amd64/Packages
+ 6d9315aebad091804be8ea4bf048ef1c1eefe1f2490550de74cf9da04467b3ff 1267 main/binary-amd64/Packages.gz
  bfdf5c15341c83a26e9cb850d8a9e4f07dc8e6c6fe94ba43e40b94a28139f85f 78 main/binary-amd64/Release

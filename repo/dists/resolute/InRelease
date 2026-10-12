@@ -2,7 +2,7 @@
 Hash: SHA512
 
 Codename: resolute
-Date: Mon, 12 Oct 2026 08:03:34 UTC
+Date: Mon, 12 Oct 2026 08:04:24 UTC
 Architectures: amd64
 Components: main
 Description: kda-community/apt-repository
@@ -20,8 +20,8 @@ SHA256:
  bfdf5c15341c83a26e9cb850d8a9e4f07dc8e6c6fe94ba43e40b94a28139f85f 78 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQRzJ6jQTe0S5OEm5HX2P8Udw3sl5QUCasyUVgAKCRD2P8Udw3sl
-5YJwAP9Nccpl9lmF1El1nQJSMX4ao3nC0Q216VWi8mE/hlL0cwD+MUZPrYtluPXo
-8beOm0zMd38uW2zTizS3K/7OvTo/Mwc=
-=cjxN
+iHUEARYKAB0WIQRzJ6jQTe0S5OEm5HX2P8Udw3sl5QUCasyUiQAKCRD2P8Udw3sl
+5VnQAP49ugufCqV5kSHZsEdzm41PNdOQXtJEfOqI3dJHvP5fBgD/RwzaFLtU925Q
+hUqCmux2rAldgrX9pNWqYq6MWMkt5QI=
+=EgG/
 -----END PGP SIGNATURE-----

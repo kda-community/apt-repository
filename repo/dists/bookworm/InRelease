@@ -2,7 +2,7 @@
 Hash: SHA512
 
 Codename: bookworm
-Date: Mon, 12 Oct 2026 08:03:32 UTC
+Date: Mon, 12 Oct 2026 08:04:22 UTC
 Architectures: amd64
 Components: main
 Description: kda-community/apt-repository
@@ -20,8 +20,8 @@ SHA256:
  bfdf5c15341c83a26e9cb850d8a9e4f07dc8e6c6fe94ba43e40b94a28139f85f 78 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQRzJ6jQTe0S5OEm5HX2P8Udw3sl5QUCasyUVAAKCRD2P8Udw3sl
-5aP8AP9h+vt/XBuff7OrSbeHxcbuGb8+a2nJ0ZQDgMg2EPzTcwD/czE0pS/M2/50
-QU9EjQvAbC3ZiPMJmubrPyX4o62UOQw=
-=6VcW
+iHUEARYKAB0WIQRzJ6jQTe0S5OEm5HX2P8Udw3sl5QUCasyUhgAKCRD2P8Udw3sl
+5VZHAP9zzu/f1ckPVjZVdawDfxPCVEpaOEiwJ1GNnit5WxAEmAEA4y8Z2BRqgHsZ
+k7reIrHxkm+Csg+vQq5IvP7ENeLA/wY=
+=Lueg
 -----END PGP SIGNATURE-----
